@@ -9,3 +9,11 @@ Flutter utiliza Dart, un lenguaje de programación también creado por Google y 
 
 A diferencia del desarrollo híbrido de aplicaciones móviles basado en un WebView para mostrar código HTML, o el desarrollo bridge que utiliza renderers intermedios de código nativo para la generación de apps, Flutter compila directamente hacia el código final que interactúa con el procesador, saltándose los pasos intermedios, por lo que las aplicaciones resultantes tienen una mejor performance y mayor rendimiento. Flutter usa sus propios Widgets y engine de renderizado llamado Skia Canvas desarrollado en C++.
 
+Dart y Flutter
+Dart es el lenguaje de programación que usa Flutter para operar. Es un lenguaje de programación que usa el paradigma de Programación Orientada a Objetos (OOP). Ha sido creado por Google y es considerado por algunos como “el lenguaje de programación del futuro” por su versatilidad de uso.
+
+Dart se puede usar en dispositivos móviles con Flutter; en el desarrollo web, a través de un framework para el desarrollo frontend con JavaScript llamado AngularDart, que es una combinación con Angular; e incluso se puede usar en desarrollo backend a través de frameworks para HTTP servers como Aqueduct.
+
+Aún cuando no se necesitan conocimientos previos específicos para completar este curso, haber trabajado previamente con Dart, con lenguajes de programación orientada a objetos como Java, C++, etc. o haber desarrollado aplicaciones móviles usando los SDKs de Android y iOS en código nativo, con React Native, Xamarin o Ionic, te hará más fácil el camino.
+
+La sintaxis de Dart se parece bastante a Java. Sin embargo, Google ha declarado que Dart está inspirado totalmente en la programación reactiva y estilo de programación de React.js, por lo que si has trabajado anteriormente con este framework (usando styled components) seguro te será fácil comprender y adoptar la sintaxis de Dart.
