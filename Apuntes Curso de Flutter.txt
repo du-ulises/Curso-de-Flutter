@@ -31,3 +31,63 @@ En el ecosistema de desarrollo multiplataforma de Microsoft y .NET, Xamarin / Xa
 Flutter
 
 En Flutter, el equivalente a los Views, UIViews y Elements, con los que se componen las interfaces de las aplicaciones, son los Widgets, de hecho todo en Flutter es en esencia, un Widget, y la forma en que se diseñan y se componen las interfaces es mediante la definición de árboles de Widgets o Widget tree en los que todos los Widget de la interfaz están organizados de forma anidada y representan atributos o propiedades de este árbol.
+
+Flutter para desarrolladores React Native
+Si desarrollas aplicaciones con React Native ya habrás notado que hacerlo con Flutter es muy similar pues utiliza el mismo estilo reactivo.
+La principal diferencia es que mientras que React Native transpila (traduce) el código a Widgets Nativos para cada plataforma, Flutter compila todo directamente a Nativo controlando cada pixel de la pantalla para evitar problemas de rendimiento causados por el bridge de JavaScript.
+Ahora que estás interesado en aprender Flutter voy a darte un breve recorrido entre lo que maneja React Native y lo que encontrarás en Flutter.
+El punto de entrada de una aplicación en React Native está definido por ti a partir de una función
+// JavaScript
+
+function startHere() {
+
+  // Can be used as entry point
+
+}
+Flutter maneja un punto de entrada ya definido que es la función main
+// Dart
+
+main() {
+
+}
+Más allá de esto, verás que la manera de funcionar de cada uno es muy similar.
+A continuación te presento cómo sería un Hola Mundo con React Native vs. Flutter:
+// React Native
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Hello world!</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+});
+
+
+// Flutter
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Hello, world!',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
+  );
+}
+Verás que la verbosidad entre códigos es más reducida en Flutter y esto es gracias al lenguaje de programación Dart y en general la mejora que se está proponiendo con este SDK.
+
