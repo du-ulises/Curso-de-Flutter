@@ -1,0 +1,28 @@
+Flutter Widgets: Container, Text, Icon, Row
+Ahora que ya tenemos el análisis de la interfaz de nuestro proyecto, conoceremos el primer grupo de widgets que nos ofrece Flutter y con el que iremos dando forma a nuestra aplicación.
+
+Container: como su nombre lo indica, es un contenedor que nos permite agrupar u organizar internamente otros widgets.
+Text: se utiliza para mostrar textos simples.
+Icon: se utiliza para incluir iconos predefinidos en la interfaz.
+Row: es un contenedor en el que los elementos internos se organizan de forma horizontal y seguidos unos de otros.
+Cada uno de los widgets tienen propiedades, algunas comunes y otras particulares que iremos viendo a lo largo del curso.
+
+Como ya hemos visto en clases anteriores: ““En Flutter, prácticamente TODO es un widget””, así que la forma de pasar del análisis de la interfaz al código es mediante la composición de widgets propios (o clases) que contendrán los diferentes grupos anidados de widgets básicos para cada sección de la interfaz. De esta manera tendremos una estructura mucho más organizada y
+mantenible.
+
+Los nombres de archivo en Dart, con Flutter, generalmente deben ir escritos en minúsculas y usando underscore en lugar de espacios, a este estilo se le llama SnakeCase; sin embargo, internamente, los nombres de las clases se escribirán con mayúscula inicial o estilo PascalCase.
+
+La primera línea del archivo de clase en Dart que define un Widget, es la siguiente:
+
+import 'package:flutter/material.dart';
+Y con ella se importan al contexto global de nuestra aplicación todas las definiciones de widgets que vienen predefinidos y listo para usarse con Flutter.
+
+Flutter Widgets: Column
+El widget Column, como ya vimos, nos permite organizar distintos elementos visuales de la interfaz (también widgets) de manera vertical, alineados uno arriba / debajo del otro en el eje Y.
+
+Los widgets hijos, que van a ser organizados dentro de un Column padre, deben estar definidos en la propiedad children de éste, como un arreglo de elementos de tipo <Widget>[...].
+
+Algo que debemos recordar es que los widgets que usamos como children, pueden definirse bien sea directamente (inline) o bien a través de clases externas (o widgets personalizados) que hemos definido previamente en archivos .dart independientes.
+
+Para utilizar valores que nos permitan tener contenido dinámico en nuestra interfaz es necesario apoyarnos en el método constructor que lleva el mismo nombre de la clase y en el que definimos los parámetros de entrada que serán utilizados en lugar de las variables por defecto que también hemos definido antes.
+
