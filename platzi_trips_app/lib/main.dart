@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hola Mundo"),
         ),
-        body: new DescriptionPlace("New York", 4, descriptionDummy),
+        body: new DescriptionPlace("Duwili Ella", 4, descriptionDummy),
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

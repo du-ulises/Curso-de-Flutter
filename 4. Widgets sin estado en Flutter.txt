@@ -44,3 +44,22 @@ fonts:
 Algo que se debe tener en cuenta es que yaml es bastante estricto con la indentación de los datos. En otras palabras, la sangría, tabulación o espaciado de cada línea debe estar indicada correctamente para que no haya problemas con la lectura y procesamiento posterior de las configuraciones.
 
 Para aplicar la nueva tipografía a nuestro código bastará con incluir en el widget TextStyle, la propiedad fontFamily e indicar en ella el nombre de la fuente que hemos declarado en nuestro archivo de configuración.
+
+Widget Image
+Similar a la manera en que declaramos e incorporamos los recursos de tipografía en la clase anterior, las imágenes al ser también recursos externos, deberán ser guardadas en un directorio particular que llamaremos assets/ y declaradas en el archivo pubspecs.yaml de la siguiente manera:
+
+...
+        assets:
+                - <ubicación del recurso en la estructura de archivos del proyecto>
+...
+Una vez declarado el recurso de imagen en el archivo de configuraciones, lo incorporamos al código mediante el widget AssetImage( “<ubicación del asset>” ) que a su vez colocaremos como valor de la propiedad image de un widget DecorationImage, o de cualquier otro widget que disponga de la propiedad image, como es el caso del BoxDecoration.
+
+Widget Apilando Textos
+Cuando hablamos de apilar textos nos referimos a organizarlos de tal forma que queden unos arriba de otros formando items compuestos que luego serán parte de una lista. Para esto nos apoyaremos en los widgets: Container(), Text() y Column(), dispuestos convenientemente en un widget tree que en próximas clases completaremos con la funcionalidad de scrolling como ya veremos.
+
+Siguiendo el análisis de la interfaz de nuestro proyecto, que hicimos en clases anteriores, haremos la composición de nuestro widget review, y luego del widget reviewList.
+
+Presta especial atención al uso de los widgets Text y TextStyle, ya que son claves para definir la apariencia de los textos en la lista de reviews.
+
+Progresivamente iremos apilante los textos que vamos definiendo de forma individual, usando el widget Column(), que como ya hemos visto en clases anteriores, nos permite organizar los widgets hijos unos arriba de los otros en el eje Y.
+
