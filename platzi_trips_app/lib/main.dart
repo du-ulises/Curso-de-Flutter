@@ -18,14 +18,35 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       home: Scaffold(
         appBar: AppBar(
+          leading: Icon(Icons.arrow_back),
           title: Text("Hola Mundo"),
         ),
-        body: Center(
-          child: Text("Hola Diego Ulises"),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/cellphone-device-electronics.jpg'),
+                fit: BoxFit.cover
+            )
+          ),
+          child: Center(
+            child: Container(
+              height: 60.0,
+              color: Color.fromRGBO(0, 0, 0, 0.4),
+              child: Center(
+                child: Text(
+                  "Reto 2 de Platzi",
+                  style: TextStyle(
+                    color: Color.fromRGBO(255, 255, 255, 0.9),
+                    fontSize: 30.0
+                  ),
+                ),
+              ),
+            ),
+          ),
         ),
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
