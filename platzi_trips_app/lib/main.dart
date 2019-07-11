@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
+  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ";
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,36 +22,13 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back),
           title: Text("Hola Mundo"),
         ),
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/images/cellphone-device-electronics.jpg'),
-                fit: BoxFit.cover
-            )
-          ),
-          child: Center(
-            child: Container(
-              height: 60.0,
-              color: Color.fromRGBO(0, 0, 0, 0.4),
-              child: Center(
-                child: Text(
-                  "Reto 2 de Platzi",
-                  style: TextStyle(
-                    color: Color.fromRGBO(255, 255, 255, 0.9),
-                    fontSize: 30.0
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
+        body: new DescriptionPlace("New York", 4, descriptionDummy),
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
