@@ -63,3 +63,12 @@ Presta especial atención al uso de los widgets Text y TextStyle, ya que son cla
 
 Progresivamente iremos apilante los textos que vamos definiendo de forma individual, usando el widget Column(), que como ya hemos visto en clases anteriores, nos permite organizar los widgets hijos unos arriba de los otros en el eje Y.
 
+Widgets Decorados
+Al hablar de widgets decorados nos referimos básicamente a un widget de tipo Container(), al que podemos darle características visuales extendidas, o de decoración. Esto lo podemos conseguir al asignar a la propiedad decoration de dicho Container(), otro widget especial llamado BoxDecoration().
+
+Algunas de las propiedades de decoración disponibles con este widget son:
+
+color: para asignar el color de relleno de fondo del contenedor.
+gradient: para definir un gradiente de colores de relleno.
+border: para asignar un borde.
+borderRadius: para indicar que los bordes del contenedor serán redondeados.
