@@ -20,6 +20,7 @@ class PlatziTripsCupertino extends StatelessWidget {
       ]),
       tabBuilder: (BuildContext context, int index) {
         switch (index) {
+          // ignore: missing_return
           case 0:
             return CupertinoTabView(
               builder: (BuildContext context) => HomeTrips(),

@@ -56,6 +56,7 @@ flutter:
     - assets/images/mountain_stars.jpeg
     - assets/images/river.jpeg
     - assets/images/sunset.jpeg
+    - assets/images/gradiente.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
