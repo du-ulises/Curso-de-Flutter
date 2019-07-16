@@ -88,3 +88,9 @@ La particularidad del widget ListView(), como ya lo habíamos adelantado en clas
 En esta clase implementamos el ListView(), con la particularidad de que el desplazamiento o scrolling que definiremos en la propiedad scrollDirection será horizontal y no vertical para lo cual usaremos la variable Axis.horizontal.
 
 Algo importante que vale la pena recordar es que con Flutter podemos crear widgets personalizados que luego podemos parametrizar y reutilizar tantas veces como queramos.
+
+
+Widget Button, InkWell
+El BottomNavigationBar es un widget muy común para la navegación principal a través de las diferentes pantallas o vistas de nuestra aplicación. Al igual que el FloatingActionButton(), y como responderá a la interacción con el usuario, al BottomNavigationBar() le corresponde heredar de la clase StatefulWidget.
+
+Para definir las características de la apariencia que tendrá este widget, lo envolveremos a su vez en un widget de tipo Theme() y le asignaremos finalmente el widget BottomNavigationBar() a la propiedad child.
