@@ -72,3 +72,13 @@ color: para asignar el color de relleno de fondo del contenedor.
 gradient: para definir un gradiente de colores de relleno.
 border: para asignar un borde.
 borderRadius: para indicar que los bordes del contenedor serán redondeados.
+
+Widget Imagen Decorada
+Como ya hemos visto en clases anteriores, al momento de incorporar imágenes a nuestra interfaz, basta con utilizar el widget AssetImage() como valor de la propiedad image en un BoxDecoration(), Container(), o similar; habiendo declarado previamente las imágenes como assets en el archivo de configuraciones pubspecs.yaml de Flutter.
+
+Ahora bien, si queremos dar a esas imágenes características visuales o de decoración particulares, como: alineación, repetición en mosaico, filtros de color o ajuste de tamaño (fit), entre otras, será necesario disponer entonces de un widget diferente: el DecorationImage(), el cual usaremos en sustitución del tradicional AssetImage(). De esta manera tendremos disponibles todas estas propiedades especiales, además de la propiedad que ya conocemos: image que sí, nuevamente, tendría que estar definida por un AssetImage().
+
+TIP: para evitar que el statusBar de Android se vea con un color más oscuro, habitual en este SO, podemos agregar al final de la clase MainActivity del archivo MainActivity.kt (ubicado en la carpeta src/main/kotlin/), la siguiente línea de código:
+
+this.getWindow().statusBarColor(android.graphics.Color.TRANSPARENT);
+

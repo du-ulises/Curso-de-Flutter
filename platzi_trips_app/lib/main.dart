@@ -7,7 +7,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
-  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ";
+  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.";
 
   // This widget is the root of your application.
   @override
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
                 ReviewList()
               ],
             ),
-            GradientBack()
+            GradientBack("Popular")
           ],
         ),
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
