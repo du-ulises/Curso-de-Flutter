@@ -82,3 +82,9 @@ TIP: para evitar que el statusBar de Android se vea con un color más oscuro, ha
 
 this.getWindow().statusBarColor(android.graphics.Color.TRANSPARENT);
 
+Widget Listview
+La particularidad del widget ListView(), como ya lo habíamos adelantado en clases anteriores, es la capacidad de permitir el desplazamiento del contenido (generalmente items de una lista) que en principio queda ubicado fuera de la región visible de nuestra interfaz.
+
+En esta clase implementamos el ListView(), con la particularidad de que el desplazamiento o scrolling que definiremos en la propiedad scrollDirection será horizontal y no vertical para lo cual usaremos la variable Axis.horizontal.
+
+Algo importante que vale la pena recordar es que con Flutter podemos crear widgets personalizados que luego podemos parametrizar y reutilizar tantas veces como queramos.
