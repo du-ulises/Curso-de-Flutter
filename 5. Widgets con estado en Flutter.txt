@@ -1,0 +1,14 @@
+Clase StatefulWidget: Cómo se compone
+Flutter maneja fundamentalmente dos clases de Widgets, los que heredan (o extienden) sus propiedades y comportamientos a partir de la clase StatelessWidget y los que heredan (o extienden) de la clase StatefulWidget. Comprender la diferencia entre estos dos tipos de Widgets será especialmente importante cuando vayamos a programar la lógica de nuestra aplicación.
+
+Lo primero que debemos comprender es qué significan los términos Stateless y Stateful:
+
+Stateless: sin estado. (Que es inmutable. Que no cambia)
+
+Stateful: que posee estado. (Que puede cambiar)
+
+El estado es un concepto propio de la programación funcional, y en términos muy generales se refiere al valor o situación de todo el conjunto de variables, métodos y funciones contenidas en una clase en un momento dado. Para ilustrarlo un poco, sería como una “fotografía” de todos los valores asociados a una clase. Lo peculiar de este concepto es que un estado puede ser mutable, que puede cambiar o ser cambiado en algún momento durante la ejecución de la aplicación, dependiendo de algún evento o variable externa; o, por otro lado, pudiera ser inmutable, que nunca cambia, o que sus valores no dependen de ningún elemento o evento externo o interacción con el usuario.
+
+En síntesis, el State es un tipo de clase particular que almacena la situación, o el estado, de un Widget durante la ejecución de la aplicación y, como parte de su comportamiento, presta atención a los eventos o interacciones externas que le sucedan a éste y que puedan generar una modificación o alteración de sus propiedades, métodos o funciones. Como resultado, el State devuelve una nueva “fotografía”, con la nueva situación ya cambiada del Widget y este se vuelve a renderizar en la interfaz.
+
+En las clases siguientes veremos de forma práctica estas diferencias.
