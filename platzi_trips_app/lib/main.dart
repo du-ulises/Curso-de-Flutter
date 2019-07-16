@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.";
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -27,20 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        //body: new DescriptionPlace("Duwili Ella", 4, descriptionDummy),
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Duwili Ella", 4, descriptionDummy),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-      ) //MyHomePage(title: 'Flutter Demo Home Page'),
+      home: //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
