@@ -86,3 +86,11 @@ class _<nombre del widget> extends State<<nombre del widget>> {
   }
 
 }
+
+
+
+
+Generando Navegación en BottomNavigationBar
+Para completar el funcionamiento de nuestro BottomNavigationBar definiremos el método onTapTapped() que contendrá la lógica para la navegación entre las diferentes vistas de nuestra aplicación como respuesta a la interacción con el usuario, y que estará asignada a la propiedad onTap.
+
+Para controlar el cambio de vistas nos valemos precisamente de la condición de mutabilidad del widget modificando la variable indexTap con la función setState(), fijándola en el valor del índice que recibe el método onTapTapped() como parámetro y que hace referencia a la posición del BottomNavigationBarItem que fue presionado. Al asignar el valor de este índice a la propiedad currentIndex automáticamente se cambiará de vista producto del comportamiento reactivo de este tipo de widgets con estado.
