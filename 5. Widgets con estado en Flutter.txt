@@ -12,3 +12,77 @@ El estado es un concepto propio de la programación funcional, y en términos mu
 En síntesis, el State es un tipo de clase particular que almacena la situación, o el estado, de un Widget durante la ejecución de la aplicación y, como parte de su comportamiento, presta atención a los eventos o interacciones externas que le sucedan a éste y que puedan generar una modificación o alteración de sus propiedades, métodos o funciones. Como resultado, el State devuelve una nueva “fotografía”, con la nueva situación ya cambiada del Widget y este se vuelve a renderizar en la interfaz.
 
 En las clases siguientes veremos de forma práctica estas diferencias.
+
+Widget Floating Action Button
+Como vimos en la clase anterior, para que un widget sea capaz de responder a la interacción con el usuario y en función de esa interacción pueda cambiar su comportamiento o algunas de sus propiedades, este debe ser definido inicialmente como un StatefulWidget.
+
+En esta clase aprenderemos a construir, personalizar y darle comportamiento a un Floating Action Button, nuestro widget de tipo Statful, o con estado.
+
+Este widget, también conocido como Fab, es muy común en las interfaces móviles basadas en Material Design y generalmente representan al elemento de principal interacción esperada en la interfaz, equivale a un Call to action.
+
+La sintaxis básica de un Stateful Widget, es:
+
+import 'package:flutter/material.dart';
+
+class <nombre del widget> extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+  return _<nombre del widget>();
+  }
+}
+
+class _<nombre del widget> extends State<<nombre del widget>> {
+  void <método de interacción>(){
+    // TODO: interaction code
+  }
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return <nombre del widget>(
+      ... 
+      onPressed: <método de interaccion>,  // --- sin paréntesis
+      ...
+    );
+  }
+
+}
+
+
+
+
+
+
+
+Widget Floating Action Button
+Como vimos en la clase anterior, para que un widget sea capaz de responder a la interacción con el usuario y en función de esa interacción pueda cambiar su comportamiento o algunas de sus propiedades, este debe ser definido inicialmente como un StatefulWidget.
+
+En esta clase aprenderemos a construir, personalizar y darle comportamiento a un Floating Action Button, nuestro widget de tipo Statful, o con estado.
+
+Este widget, también conocido como Fab, es muy común en las interfaces móviles basadas en Material Design y generalmente representan al elemento de principal interacción esperada en la interfaz, equivale a un Call to action.
+
+La sintaxis básica de un Stateful Widget, es:
+
+import 'package:flutter/material.dart';
+
+class <nombre del widget> extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+  return _<nombre del widget>();
+  }
+}
+
+class _<nombre del widget> extends State<<nombre del widget>> {
+  void <método de interacción>(){
+    // TODO: interaction code
+  }
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return <nombre del widget>(
+      ... 
+      onPressed: <método de interaccion>,  // --- sin paréntesis
+      ...
+    );
+  }
+
+}
